@@ -23,6 +23,12 @@ public class MyLinkedList {
         }
     }
 
+    public INode delete() {
+        INode tempNode = this.head;
+        this.head = head.getNext();
+        return tempNode;
+    }
+
     public void printMyNodes() {
         StringBuilder myNodes = new StringBuilder("My Nodes: ");
         INode tempNode = head;
