@@ -11,12 +11,15 @@ public class MyQueue {
         myLinkedList.append(myNode);
     }
 
+    public void dequeue() {
+        myLinkedList.delete();
+    }
+
     public void printQueue() {
         myLinkedList.printMyNodes();
     }
 
     public INode peek() {
         return myLinkedList.head ;
-
     }
 }
