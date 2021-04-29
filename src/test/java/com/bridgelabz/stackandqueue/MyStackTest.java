@@ -22,6 +22,7 @@ public class MyStackTest {
         Assert.assertEquals(myThirdNode, peek);
     }
 
+    //UC2 Ability to peek and pop from the Stack till it is empty
     @Test
     public void given3NumberInStack_WhenPopped_ShouldReturnEmpty() {
         MyNode<Integer> myFirstNode = new MyNode<>(70);
